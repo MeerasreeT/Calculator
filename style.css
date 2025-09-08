@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 
 }
 .calculator{
@@ -54,4 +55,36 @@ form input.operator{
 }
 form input.equal{
     color: #33ffd8;
+}
+@media (max-width: 500px) {
+  .calculator form input {
+    height: 45px;
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  form .display input {
+    font-size: 35px;  
+  }
+
+  form input.equal {
+    width: 100px;  
+  }
+}
+
+@media (max-width: 350px) {
+  .calculator form input {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    margin: 4px;
+  }
+
+  form .display input {
+    font-size: 28px;
+  }
+
+  form input.equal {
+    width: 90px;
+  }
 }
